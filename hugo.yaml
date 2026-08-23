@@ -1,5 +1,5 @@
 baseURL: https://example.org/
-languageCode: en-us
+locale: en-us
 title: Starpulse
 
 module:
@@ -16,13 +16,19 @@ menu:
       weight: 1
     - name: Contact Us
       pageRef: /contact
-      weight: 1    
+      weight: 1
+    - name: Delete Account
+      pageRef: /deletion-request
+      weight: 2
 
 caches:
   images:
     dir: :cacheDir/images
 
 params:
+  author:
+    name: Koguhaa Technologies LLP
+    email: queries@koguhaa.com
   search:
     enable: false
   theme:
